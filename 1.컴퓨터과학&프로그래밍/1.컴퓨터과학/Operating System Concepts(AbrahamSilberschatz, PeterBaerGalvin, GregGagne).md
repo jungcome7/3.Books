@@ -3,7 +3,7 @@
 ### 출판사 : WILEY
 ### 읽은 날 : 2020.01.22 ~
 
-<Preface & Contents>
+# Preface & Contents
 
 ‘Operating systems are an essential part of any computer system. Similarly, a course on operating systems is an essential part of any computer science education.’
 
@@ -54,7 +54,7 @@ D. The Mach System
 
 ---------------------------------------------------
 
-Chapter1. Introduction
+# Chapter1. Introduction
 
 An operating system is software that manages the computer hardware. The hardware must provide appropriate mechanisms to ensure the correct operation of the computer system and to prevent programs from interfering with the proper operation of the system.
 
@@ -81,3 +81,20 @@ Multitasking is a logical extension of multiprogramming. In multitasking systems
 If several processes are ready to run at the same time, the system must choose which process will run next. Making this decision is CPU scheduling.
 
 We must ensure that the operating system maintains control over the CPU. We cannot allow a user program to get stuck in an infinite loop or to fail to call system services and never return control to the operating system. To accomplish this goal, we can use a timer. A timer can be set to interrupt the computer after a specified period. The period may be fixed (for example, 1/60 second) or variable (for example, from 1 millisecond to 1second).
+
+------------------------------------------------
+
+# Chapter 2. Operating-System Structures
+
+‘We can view an operating system from several vantage points. One view focuses on the services that the system provides; another, on the interface that it makes available to users and programmers; a third, on its components and their interconnections.’
+ㅤ
+‘Frequently, systems execute thousands of system calls per second. Most programmers never see this level of detail, however. Typically, application developers design programs according to an application programming interface (API). The API specifies a set of functions that are available to an application programmer, including the parameters that are passed to each function and the return values the programmer can expect.’
+ㅤ
+‘System calls can be grouped roughly into six major categories: process control, file management, device management, information maintenance, communications, and protection.’
+ㅤ
+‘Source files are compiled into object files that are designed to be loaded into any physical memory location, a format known as an relocatable object file. Next, the linker combines these relocatable object files into a single binary executable file. During the linking phase, other object files or libraries may be included as well, such as the standard C or math library (specified with the flag-lm).
+A loader is used to load the binary executable file into memory, where it is eligible to run on a CPU core. An activity associated with linking and loading is relocation, which assigns final addresses to the program parts and adjusts code and data in the program to match those addresses so that, for example, the code can call library functions and access its variables as it executes.’
+ㅤ
+‘A modular approach for designing operating systems provides operating system services through modules that can be loaded and removed during run time. Many contemporary operating systems are constructed as hybrid systems using a combination of monolithic kernel and modules.’
+ㅤ
+#OperatingSystemConcepts#AbrahamSilberschatz#PeterBaerGalvin#GregGagne
