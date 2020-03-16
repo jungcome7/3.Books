@@ -1,7 +1,7 @@
 # Web Development with Node & Express
 ### 지은이 : 이선 브라운(Ethan Brown)
 ### 출판사 : 길벗
-### 읽은 날 : 2020.03.14 ~
+### 읽은 날 : 2020.03.14 ~ 2020.03.16
 
 ### Overview
 1. 익스프레스 소개
